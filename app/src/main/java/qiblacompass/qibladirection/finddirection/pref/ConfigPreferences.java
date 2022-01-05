@@ -11,15 +11,14 @@ public class ConfigPreferences {
     public static int getQuibla(Context context) {
         SharedPreferences sharedPreferences = context.getSharedPreferences
                 (MAIN_CONFIG, Context.MODE_PRIVATE);
-        int degree = sharedPreferences.getInt(QUIBLA_DEGREE, -1);
-        return degree;
+        return sharedPreferences.getInt(QUIBLA_DEGREE, -1);
     }
 
     public static void setQuibla(Context context, int degree) {
         SharedPreferences.Editor editor = context.getSharedPreferences
                 (MAIN_CONFIG, Context.MODE_PRIVATE).edit();
         editor.putInt(QUIBLA_DEGREE, degree);
-        editor.commit();
+        editor.apply();
     }
 
 }

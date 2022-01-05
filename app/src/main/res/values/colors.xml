@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="green_200">#51AB76</color>
+    <color name="green_500">#479F6B</color>
+    <color name="green_700">#398E5C</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="white_dull">#DDDDDD</color>
     <color name="white">#FFFFFFFF</color>
     <color name="main_color">#3F51B5</color>
+    <color name="dark_green">#419344</color>
+    <color name="green">#4CAF50</color>
+    <color name="dark_orange">#DC8403</color>
+    <color name="orange">#FF9800</color>
+    <color name="lightblack">#393939</color>
+    <color name="dull_black">#262626</color>
 
     <color name="window_background_color">#2f2f37</color>
     <color name="compass_foreground_color">#2f2f37</color>
@@ -15,4 +22,10 @@
     <color name="compass_text_secondary_color">#c0bfc5</color>
     <color name="compass_text_primary_color">#ffffff</color>
     <color name="compass_accent_color">#03a9f4</color>
+
+    <color name="first">#00aa5e</color>
+    <color name="second">#FF9800</color>
+    <color name="third">#2196F3</color>
+    <color name="fourth">#F44336</color>
+    <color name="fifth">#FFC107</color>
 </resources>
