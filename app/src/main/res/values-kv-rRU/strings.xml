@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Qibla Compass</string>
+    <string name="get_started">Начать</string>
+    <string name="no_location">Местоположение не обнаружено</string>
+    <string name="qibla_direction">Направление Киблы с севера:</string>
+    <string name="qibla_notic">Примечание. Возможно, вам придется переместить устройство круговыми движениями, чтобы сбросить показания компаса.</string>
+    <string name="quibla_compass">Кибла Компас</string>
+    <string name="gps_alert">Похоже, ваш GPS отключен. Вы хотите включить его?</string>
+    <string name="internet_alert">Похоже, ваше интернет-соединение отключено, включите его и повторите попытку.</string>
+    <string name="yes">да</string>
+    <string name="no">Нет</string>
+    <string name="ok">В ПОРЯДКЕ</string>
+    <string name="fetching">Получение текущего местоположения</string>
+    <string name="about_permissions">Требуемые разрешения</string>
+    <string name="grant_all">Предоставить все</string>
+    <string name="proceed">Продолжить сейчас</string>
+
+    <string name="fajr">Фаджр</string>
+    <string name="sunrise">Восход солнца</string>
+    <string name="sunset">Закат</string>
+    <string name="duhr">Дур</string>
+    <string name="asar">Асар</string>
+    <string name="maghrib">Магриб</string>
+    <string name="isha">Иша</string>
+    <string name="prayer_time">Время молитв</string>
+    <string name="gregorian_date">Сегодняшняя дата:</string>
+    <string name="islamic_date">исламский:</string>
+
+    <string name="settings">Настройки</string>
+    <string name="time_formats">Форматы времени</string>
+    <string name="calculation_methods">Методы расчета</string>
+    <string name="juristic_methods">Юридические методы</string>
+    <string name="adjusting_methods">Методы регулировки</string>
+
+    <!--Drawer-->
+    <string name="share_app">Поделиться приложением</string>
+    <string name="rate_us">Оцените нас</string>
+    <string name="about_us">О нас</string>
+    <string name="more_apps">Больше приложений</string>
+
+</resources>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Qibla Compass</string>
+    <string name="get_started">Başlamak</string>
+    <string name="no_location">Konum algılanmadı</string>
+    <string name="qibla_direction">Kuzeyden kıble yönü:</string>
+    <string name="qibla_notic">Not: pusulayı sıfırlamak için cihazı dairesel hareketlerle hareket ettirmeniz gerekebilir.</string>
+    <string name="quibla_compass">Kıble Pusulası</string>
+    <string name="gps_alert">GPS\'iniz devre dışı görünüyor, etkinleştirmek istiyor musunuz?</string>
+    <string name="internet_alert">İnternet bağlantınız devre dışı görünüyor, etkinleştirin ve tekrar deneyin.</string>
+    <string name="yes">Evet</string>
+    <string name="no">Numara</string>
+    <string name="ok">tamam</string>
+    <string name="fetching">Geçerli konum getiriliyor</string>
+    <string name="about_permissions">Gerekli İzinler</string>
+    <string name="grant_all">Tümünü Ver</string>
+    <string name="proceed">Şimdi devam edin</string>
+
+    <string name="fajr">sabah namazı</string>
+    <string name="sunrise">gündoğumu</string>
+    <string name="sunset">Gün batımı</string>
+    <string name="duhr">Duhr</string>
+    <string name="asar">Asar</string>
+    <string name="maghrib">akşam yemeği</string>
+    <string name="isha">Isha</string>
+    <string name="prayer_time">namaz vakitleri</string>
+    <string name="gregorian_date">Bugünün tarihi:</string>
+    <string name="islamic_date">İslami:</string>
+
+    <string name="settings">Settings</string>
+    <string name="time_formats">Zaman biçimleri</string>
+    <string name="calculation_methods">Hesaplama yöntemleri</string>
+    <string name="juristic_methods">Hukuki yöntemler</string>
+    <string name="adjusting_methods">Ayarlama yöntemleri</string>
+
+    <!--Drawer-->
+    <string name="share_app">Uygulamayı Paylaş</string>
+    <string name="rate_us">Bizi değerlendirin</string>
+    <string name="about_us">Hakkımızda</string>
+    <string name="more_apps">Daha fazla uygulama</string>
+
+</resources>

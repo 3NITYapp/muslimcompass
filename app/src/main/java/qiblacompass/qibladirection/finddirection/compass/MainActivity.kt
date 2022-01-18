@@ -8,6 +8,7 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -15,7 +16,6 @@ import android.view.animation.Animation
 import android.view.animation.RotateAnimation
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.ViewModelProvider
 import qiblacompass.qibladirection.finddirection.R
 import qiblacompass.qibladirection.finddirection.base.BaseActivity
@@ -24,7 +24,9 @@ import qiblacompass.qibladirection.finddirection.helper.CalculateQibla
 import qiblacompass.qibladirection.finddirection.helper.Constants
 import qiblacompass.qibladirection.finddirection.helper.GeneralUtils
 import qiblacompass.qibladirection.finddirection.helper.PrefsUtils
+import qiblacompass.qibladirection.finddirection.prayer.PrayerActivity
 import qiblacompass.qibladirection.finddirection.pref.ConfigPreferences
+import java.util.*
 
 class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompassClickListener {
 
@@ -60,6 +62,17 @@ class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompass
     override fun initViewBinding() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         binding.lifecycleOwner = this
+
+        val config = resources.configuration
+        val lang = "es" // your language code
+        val locale = Locale(lang)
+        Locale.setDefault(locale)
+        config.setLocale(locale)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
+            createConfigurationContext(config)
+        resources.updateConfiguration(config, resources.displayMetrics)
+
         val view = binding.root
         binding.viewModel = viewModel
         setContentView(view)
@@ -94,6 +107,10 @@ class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompass
 
         drawerOptionsAdapter = DrawerOptionsAdapter(this)
         binding.rvOptions.adapter = drawerOptionsAdapter
+
+        binding.tvPrayerTimes.setOnClickListener {
+            PrayerActivity.startMe(this)
+        }
 
     }
 

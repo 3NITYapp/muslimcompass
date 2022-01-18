@@ -15,6 +15,7 @@
     <color name="orange">#FF9800</color>
     <color name="lightblack">#393939</color>
     <color name="dull_black">#262626</color>
+    <color name="dull_white">#CACACA</color>
 
     <color name="window_background_color">#2f2f37</color>
     <color name="compass_foreground_color">#2f2f37</color>

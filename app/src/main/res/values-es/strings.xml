@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Qibla Compass</string>
+    <string name="get_started">Empezar</string>
+    <string name="no_location">No se detectó ninguna ubicación</string>
+    <string name="qibla_direction">Dirección de Qibla desde el norte:</string>
+    <string name="qibla_notic">Nota: es posible que deba mover el dispositivo en un movimiento circular para restablecer la brújula</string>
+    <string name="quibla_compass">Brújula Qibla</string>
+    <string name="gps_alert">Tu GPS parece estar deshabilitado, ¿quieres habilitarlo?</string>
+    <string name="internet_alert">Su conexión a Internet parece estar deshabilitada, habilítela y vuelva a intentarlo.</string>
+    <string name="yes">sí</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="fetching">Obtener la ubicación actual</string>
+    <string name="about_permissions">Permisos requeridos</string>
+    <string name="grant_all">conceder todo</string>
+    <string name="proceed">Procede ahora</string>
+
+    <string name="fajr">Fayr</string>
+    <string name="sunrise">Amanecer</string>
+    <string name="sunset">Atardecer</string>
+    <string name="duhr">Duhr</string>
+    <string name="asar">Asar</string>
+    <string name="maghrib">Magreb</string>
+    <string name="isha">Isha</string>
+    <string name="prayer_time">Tiempo de oraciones</string>
+    <string name="gregorian_date">Fecha:</string>
+    <string name="islamic_date">Islámico:</string>
+
+    <string name="settings">Ajustes</string>
+    <string name="time_formats">Formatos de tiempo</string>
+    <string name="calculation_methods">Métodos de cálculo</string>
+    <string name="juristic_methods">Métodos jurídicos</string>
+    <string name="adjusting_methods">Métodos de ajuste</string>
+
+    <!--Drawer-->
+    <string name="share_app">Compartir aplicación</string>
+    <string name="rate_us">Nos califica</string>
+    <string name="about_us">Sobre nosotros</string>
+    <string name="more_apps">Más aplicaciones</string>
+
+</resources>

@@ -28,7 +28,7 @@
                 android:orientation="vertical"
                 tools:context=".compass.MainActivity">
 
-                <FrameLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp">
@@ -37,6 +37,8 @@
                         android:id="@+id/btn_nav"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="15dp"
                         android:src="@drawable/menu" />
@@ -44,13 +46,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
                         android:fontFamily="@font/poppins_bold"
                         android:text="Qibla Compass"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
-                </FrameLayout>
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/compassMain"
@@ -58,7 +61,7 @@
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.5"
                     android:visibility="visible">
 
                     <RelativeLayout
@@ -73,8 +76,7 @@
                             android:id="@+id/baseimg"
                             android:layout_width="300dp"
                             android:layout_height="300dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
+                            android:layout_centerInParent="true"
                             android:src="@drawable/compass_one" />
 
                         <ImageView
@@ -157,6 +159,22 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="80dp"
+                        android:gravity="center"
+                        android:id="@+id/tv_prayer_times"
+                        android:background="@drawable/bg_rounded"
+                        android:backgroundTint="@color/dull_black"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/prayer_time"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
                         android:id="@+id/textView11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -164,6 +182,7 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="Pakistan"
+                        android:visibility="invisible"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/black" />
 

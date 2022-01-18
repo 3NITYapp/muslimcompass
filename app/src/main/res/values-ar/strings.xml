@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Qibla Compass</string>
+    <string name="get_started">البدء</string>
+    <string name="no_location">لم يتم الكشف عن موقع</string>
+    <string name="qibla_direction">اتجاه القبلة من الشمال:</string>
+    <string name="qibla_notic">ملاحظة: قد تحتاج إلى تحريك الجهاز في حركة دائرية لإعادة ضبط البوصلة</string>
+    <string name="quibla_compass">بوصلة القبلة</string>
+    <string name="gps_alert">يبدو أن نظام تحديد المواقع العالمي (GPS) الخاص بك معطل ، هل تريد تمكينه؟</string>
+    <string name="internet_alert">يبدو أن اتصالك بالإنترنت معطل ، قم بتمكينه وحاول مرة أخرى.</string>
+    <string name="yes">نعم</string>
+    <string name="no">رقم</string>
+    <string name="ok">موافق</string>
+    <string name="fetching">إحضار الموقع الحالي</string>
+    <string name="about_permissions">الأذونات المطلوبة</string>
+    <string name="grant_all">منح الكل</string>
+    <string name="proceed">تقدم الآن</string>
+
+    <string name="fajr">الفجر</string>
+    <string name="sunrise">شروق الشمس</string>
+    <string name="sunset">غروب</string>
+    <string name="duhr">ظهر</string>
+    <string name="asar">العصر</string>
+    <string name="maghrib">المغرب</string>
+    <string name="isha">العشاء</string>
+    <string name="prayer_time">مواقيت الصلاة</string>
+    <string name="gregorian_date">تاريخ اليوم</string>
+    <string name="islamic_date">الإسلامي</string>
+
+    <string name="settings">إعدادات</string>
+    <string name="time_formats">تنسيقات الوقت</string>
+    <string name="calculation_methods">طرق الحساب</string>
+    <string name="juristic_methods">طرق فقهية</string>
+    <string name="adjusting_methods">طرق التعديل</string>
+
+    <!--Drawer-->
+    <string name="share_app">شارك التطبيق</string>
+    <string name="rate_us">قيمنا</string>
+    <string name="about_us">معلومات عنا</string>
+    <string name="more_apps">تطبيقات أكثر</string>
+</resources>

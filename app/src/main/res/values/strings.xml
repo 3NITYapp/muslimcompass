@@ -14,4 +14,28 @@
     <string name="about_permissions">Required Permissions</string>
     <string name="grant_all">Grant All</string>
     <string name="proceed">Proceed Now</string>
+
+    <string name="fajr">Fajr</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="duhr">Duhr</string>
+    <string name="asar">Asar</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="prayer_time">Prayers Time</string>
+    <string name="gregorian_date">Today\'s Date:</string>
+    <string name="islamic_date">Islamic:</string>
+
+    <string name="settings">Settings</string>
+    <string name="time_formats">Time formats</string>
+    <string name="calculation_methods">Calculation methods</string>
+    <string name="juristic_methods">Juristic methods</string>
+    <string name="adjusting_methods">Adjusting methods</string>
+
+    <!--Drawer-->
+    <string name="share_app">Share App</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="about_us">About Us</string>
+    <string name="more_apps">More Apps</string>
+
 </resources>
