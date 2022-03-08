@@ -32,6 +32,15 @@
     <string name="juristic_methods">Métodos jurídicos</string>
     <string name="adjusting_methods">Métodos de ajuste</string>
 
+    <!--Languages-->
+    <string name="select_language">Seleccione el idioma</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="french">français</string>
+    <string name="spanish">Español</string>
+    <string name="turkish">Türkçe</string>
+    <string name="russian">РОССИЯ</string>
+
     <!--Drawer-->
     <string name="share_app">Compartir aplicación</string>
     <string name="rate_us">Nos califica</string>

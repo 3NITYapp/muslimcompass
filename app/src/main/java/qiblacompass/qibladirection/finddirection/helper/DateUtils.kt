@@ -108,4 +108,10 @@ object DateUtils {
                 + iMonthNames[iDate[6].toInt()] + " \n" + iDate[7].toInt() + " AH")
     }
 
+    fun convertLongToTime(time: Long): String {
+        val date = Date(time)
+        val format = SimpleDateFormat("HH:mm", Locale.getDefault())
+        return format.format(date)
+    }
+
 }

@@ -5,8 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/lyDetail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:background="@color/white"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -23,9 +23,10 @@
             android:textSize="18sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:visibility="gone"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/time_formats"
             android:textColor="@color/dull_black"/>
@@ -33,6 +34,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:visibility="gone"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="20dp"
@@ -49,7 +51,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:fontFamily="@font/poppins_semibold"
@@ -75,7 +77,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:fontFamily="@font/poppins_semibold"
@@ -101,7 +103,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:fontFamily="@font/poppins_semibold"
@@ -134,7 +136,7 @@
             android:layout_marginRight="10dp"
             android:gravity="center"
             android:id="@+id/btn_save"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/bg_rounded"
             android:backgroundTint="@color/dull_black"
             android:fontFamily="@font/poppins_regular"

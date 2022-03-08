@@ -32,6 +32,15 @@
     <string name="juristic_methods">Juristic methods</string>
     <string name="adjusting_methods">Adjusting methods</string>
 
+    <!--Languages-->
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="french">français</string>
+    <string name="spanish">Español</string>
+    <string name="turkish">Türkçe</string>
+    <string name="russian">РОССИЯ</string>
+
     <!--Drawer-->
     <string name="share_app">Share App</string>
     <string name="rate_us">Rate Us</string>

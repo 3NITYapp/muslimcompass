@@ -320,21 +320,20 @@ public class AppSettings {
         set(getKeyFor(Key.TIME_FORMAT, index), format);
     }
 
-    public double getLatFor(int index) {
-        return getDouble(getKeyFor(Key.LAT_FOR, index));
+    public double getLatFor() {
+        return getDouble(Key.LAT_FOR);
     }
 
-    public double getLngFor(int index) {
-        return getDouble(getKeyFor(Key.LNG_FOR, index));
+    public double getLngFor() {
+        return getDouble(Key.LNG_FOR);
     }
 
-
-    public void setLatFor(int index, double lat) {
-        set(getKeyFor(Key.LAT_FOR, index), lat);
+    public void setLatFor(double lat) {
+        set(Key.LAT_FOR, lat);
     }
 
-    public void setLngFor(int index, double lng) {
-        set(getKeyFor(Key.LNG_FOR, index), lng);
+    public void setLngFor(double lng) {
+        set(Key.LNG_FOR, lng);
     }
 
     public boolean isDefaultSet() {

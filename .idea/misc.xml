@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.17962962962962964" />
+        <entry key="app/src/main/res/drawable/bg_compass_2.xml" value="0.19375" />
         <entry key="app/src/main/res/drawable/bg_rounded.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/bg_solid_white.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/btn_bg_rounded.xml" value="0.19427083333333334" />
@@ -12,15 +13,20 @@
         <entry key="app/src/main/res/drawable/compass_one.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/compass_three.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/compass_two.xml" value="0.209375" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/fg_compass.xml" value="0.19375" />
+        <entry key="app/src/main/res/drawable/ic_compass_text.xml" value="0.209375" />
+        <entry key="app/src/main/res/layout/activity_compass_test.xml" value="0.10778985507246377" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_permissions_detail.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_prayer.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="app/src/main/res/layout/custom_progress.xml" value="0.17481884057971014" />
         <entry key="app/src/main/res/layout/fragment_compass.xml" value="0.18" />
         <entry key="app/src/main/res/layout/item_row.xml" value="0.17889492753623187" />
+        <entry key="app/src/main/res/layout/language_custom_cell.xml" value="0.22" />
         <entry key="app/src/main/res/layout/layout_drawer_options.xml" value="0.1621376811594203" />
-        <entry key="app/src/main/res/layout/ly_settings.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/ly_languages.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/ly_settings.xml" value="0.18" />
       </map>
     </option>
   </component>

@@ -33,6 +33,15 @@
     <string name="juristic_methods">طرق فقهية</string>
     <string name="adjusting_methods">طرق التعديل</string>
 
+    <!--Languages-->
+    <string name="select_language">اختار اللغة</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="french">français</string>
+    <string name="spanish">Español</string>
+    <string name="turkish">Türkçe</string>
+    <string name="russian">РОССИЯ</string>
+
     <!--Drawer-->
     <string name="share_app">شارك التطبيق</string>
     <string name="rate_us">قيمنا</string>

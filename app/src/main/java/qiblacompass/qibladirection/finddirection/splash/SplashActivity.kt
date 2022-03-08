@@ -17,6 +17,7 @@ class SplashActivity : BaseActivity() {
     private lateinit var binding: ActivitySplashBinding
     lateinit var viewModel: SplashViewModel
     lateinit var factory: SplashViewModelFactory
+    lateinit var prefs: PrefsUtils
 
     override fun observeViewModel() {
         // nothing
@@ -36,6 +37,8 @@ class SplashActivity : BaseActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        prefs = PrefsUtils(this)
+        LocaleManager.setNewLocale(this, prefs.getFromPrefsWithDefault("locale", "en"))
         super.onCreate(savedInstanceState)
         window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 

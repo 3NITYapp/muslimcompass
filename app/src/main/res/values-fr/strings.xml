@@ -23,7 +23,7 @@
     <string name="maghrib">Maghreb</string>
     <string name="isha">Icha</string>
     <string name="prayer_time">Temps de prières</string>
-    <string name="gregorian_date">La date d\'aujourd'hui:</string>
+    <string name="gregorian_date">Date grégorienne:</string>
     <string name="islamic_date">Islamique:</string>
 
     <string name="settings">Réglages</string>
@@ -31,6 +31,15 @@
     <string name="calculation_methods">Méthodes de calcul</string>
     <string name="juristic_methods">Méthodes juridiques</string>
     <string name="adjusting_methods">Méthodes d\'ajustement</string>
+
+    <!--Languages-->
+    <string name="select_language">Choisir la langue</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="french">français</string>
+    <string name="spanish">Español</string>
+    <string name="turkish">Türkçe</string>
+    <string name="russian">РОССИЯ</string>
 
     <!--Drawer-->
     <string name="share_app">Partager l\'application</string>

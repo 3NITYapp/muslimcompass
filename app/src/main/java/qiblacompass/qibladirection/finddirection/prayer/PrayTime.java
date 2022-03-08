@@ -3,6 +3,8 @@ package qiblacompass.qibladirection.finddirection.prayer;
 import android.content.Context;
 import android.util.Log;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -565,10 +567,23 @@ public class PrayTime {
             } else if (this.getTimeFormat() == TIME_12_NS) {
                 result.add(floatToTime12(times[i], true));
             } else {
-                result.add(floatToTime24(times[i]));
+                result.add(twentyfour_time(floatToTime24(times[i])));
             }
         }
         return result;
+    }
+
+    private String twentyfour_time(String time) {
+        String newTimeIs = "";
+        final SimpleDateFormat sdf = new SimpleDateFormat("h:mm");
+        Date dateObj = null;
+        try {
+            dateObj = sdf.parse(time);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        newTimeIs = new SimpleDateFormat("H:mm").format(dateObj);
+        return newTimeIs;
     }
 
     // adjust Fajr, Isha and Maghrib for locations in higher latitudes

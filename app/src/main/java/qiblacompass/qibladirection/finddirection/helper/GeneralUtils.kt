@@ -12,6 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 object GeneralUtils {
 
     var optionsDrawerFlag = -1
+    var languagesFlag = 0
     var drawer : DrawerLayout? = null
 
     @JvmStatic

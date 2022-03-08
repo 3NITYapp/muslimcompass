@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Qibla Compass</string>
+    <string name="get_started"> Начало работы </string>
+    <string name="no_location"> Местоположение не обнаружено </string>
+    <string name="qibla_direction"> Направление Кибла с севера:</string>
+    <string name="qibla_notic"> Примечание: вам может потребоваться переместить устройство круговым движением, чтобы сбросить компас </string>
+    <string name="quibla_compass"> Компас Кибла </string>
+    <string name="gps_alert"> Ваш GPS, кажется, отключен, вы хотите включить его?</string>
+    <string name="internet_alert"> Подключение к Интернету отключено, включите его и повторите попытку.</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="ok"> ХОРОШО </string>
+    <string name="fetching"> Извлечение текущего местоположения </string>
+    <string name="about_permissions"> Необходимые разрешения </string>
+    <string name="grant_all"> Грант Все </string>
+    <string name="proceed"> Продолжить сейчас </string>
+
+    <string name="fajr"> Фаджр </string>
+    <string name="sunrise"> Восход солнца </string>
+    <string name="sunset"> Заход солнца </string>
+    <string name="duhr"> Дюр </string>
+    <string name="asar"> Асар </string>
+    <string name="maghrib"> Магриб </string>
+    <string name="isha"> Иша </string>
+    <string name="prayer_time"> Время молитв </string>
+    <string name="gregorian_date"> Дата сегодняшнего дня:</string>
+    <string name="islamic_date"> Исламский:</string>
+
+    <string name="settings"> Параметры </string>
+    <string name="time_formats"> Форматы времени </string>
+    <string name="calculation_methods"> Методы расчета </string>
+    <string name="juristic_methods"> Юридические методы </string>
+    <string name="adjusting_methods"> Методы настройки </string>
+
+    <!--Languages-->
+    <string name="select_language"> Выбрать язык </string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="french">français</string>
+    <string name="spanish">Español</string>
+    <string name="turkish">Türkçe</string>
+    <string name="russian">РОССИЯ</string>
+
+    <!--Drawer-->
+    <string name="share_app"> Поделиться приложением </string>
+    <string name="rate_us"> Оцените нас </string>
+    <string name="about_us"> О нас </string>
+    <string name="more_apps"> Другие приложения </string>
+
+</resources>

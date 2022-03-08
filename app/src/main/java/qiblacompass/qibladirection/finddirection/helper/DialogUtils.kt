@@ -1,5 +1,7 @@
 package qiblacompass.qibladirection.finddirection.helper
 
+import android.annotation.SuppressLint
+import android.app.Activity
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
@@ -13,15 +15,11 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import qiblacompass.qibladirection.finddirection.R
-import qiblacompass.qibladirection.finddirection.compass.ImageAdapter
-import qiblacompass.qibladirection.finddirection.databinding.ActivityPrayerBinding
 import qiblacompass.qibladirection.finddirection.databinding.CustomProgressBinding
+import qiblacompass.qibladirection.finddirection.databinding.LyLanguagesBinding
 import qiblacompass.qibladirection.finddirection.databinding.LySettingsBinding
-import java.util.ArrayList
-import java.util.HashMap
-import java.util.HashSet
+import qiblacompass.qibladirection.finddirection.lang.LanguagesAdapter
 
 class DialogUtils(val context: Context, layoutInflater: LayoutInflater) {
 
@@ -53,6 +51,7 @@ class DialogUtils(val context: Context, layoutInflater: LayoutInflater) {
         dialog.dismiss()
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     fun showSettingDialog() {
         val dialog = Dialog(context!!)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -61,9 +60,11 @@ class DialogUtils(val context: Context, layoutInflater: LayoutInflater) {
         dialog.setContentView(binding.root)
         val lp = WindowManager.LayoutParams()
         lp.copyFrom(dialog.window!!.attributes)
-        lp.width = WindowManager.LayoutParams.MATCH_PARENT
+        lp.width = (context.resources.displayMetrics.widthPixels * 0.90).toInt()
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT
+        dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialog.window!!.attributes = lp
+        binding.lyDetail.background = context.resources.getDrawable(R.drawable.dialog_bg)
 
         val timeFormats = arrayOf("24 hours format", "12 hours format", "12 hour no suffix")
         binding.spTimeFormats.adapter = ArrayAdapter(context, android.R.layout.simple_list_item_1, timeFormats)
@@ -125,6 +126,28 @@ class DialogUtils(val context: Context, layoutInflater: LayoutInflater) {
             _settingsSavedListener.onSettingsSaved(true)
             dialog.dismiss()
         }
+
+        dialog.show()
+    }
+
+    fun showLanguagesDialog() {
+        val dialog = Dialog(context!!)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(true)
+        val binding = LyLanguagesBinding.inflate(inflater)
+        dialog.setContentView(binding.root)
+        val lp = WindowManager.LayoutParams()
+        lp.copyFrom(dialog.window!!.attributes)
+        lp.width = (context.resources.displayMetrics.widthPixels * 0.90).toInt()
+        lp.height = (context.resources.displayMetrics.heightPixels * 0.40).toInt()
+//        lp.height = WindowManager.LayoutParams.WRAP_CONTENT
+        dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.window!!.attributes = lp
+        binding.lyDetail.background = context.resources.getDrawable(R.drawable.dialog_bg)
+
+        val langAdapter = LanguagesAdapter(context as Activity, dialog)
+        binding.rvLanguages.layoutManager = LinearLayoutManager(context)
+        binding.rvLanguages.adapter = langAdapter
 
         dialog.show()
     }

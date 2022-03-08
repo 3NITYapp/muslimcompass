@@ -8,7 +8,6 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -17,16 +16,12 @@ import android.view.animation.RotateAnimation
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.lifecycle.ViewModelProvider
+import kotlinx.android.synthetic.main.activity_main.*
 import qiblacompass.qibladirection.finddirection.R
 import qiblacompass.qibladirection.finddirection.base.BaseActivity
 import qiblacompass.qibladirection.finddirection.databinding.ActivityMainBinding
-import qiblacompass.qibladirection.finddirection.helper.CalculateQibla
-import qiblacompass.qibladirection.finddirection.helper.Constants
-import qiblacompass.qibladirection.finddirection.helper.GeneralUtils
-import qiblacompass.qibladirection.finddirection.helper.PrefsUtils
-import qiblacompass.qibladirection.finddirection.prayer.PrayerActivity
+import qiblacompass.qibladirection.finddirection.helper.*
 import qiblacompass.qibladirection.finddirection.pref.ConfigPreferences
-import java.util.*
 
 class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompassClickListener {
 
@@ -63,19 +58,23 @@ class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompass
         binding = ActivityMainBinding.inflate(layoutInflater)
         binding.lifecycleOwner = this
 
-        val config = resources.configuration
-        val lang = "es" // your language code
+        /*val config = resources.configuration
+        val lang = "ar" // your language code
         val locale = Locale(lang)
         Locale.setDefault(locale)
         config.setLocale(locale)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
             createConfigurationContext(config)
-        resources.updateConfiguration(config, resources.displayMetrics)
+        resources.updateConfiguration(config, resources.displayMetrics)*/
 
         val view = binding.root
         binding.viewModel = viewModel
         setContentView(view)
+    }
+
+    override fun attachBaseContext(newBase: Context?) {
+        super.attachBaseContext(newBase)
     }
 
     override fun setupViewModel() {
@@ -107,10 +106,6 @@ class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompass
 
         drawerOptionsAdapter = DrawerOptionsAdapter(this)
         binding.rvOptions.adapter = drawerOptionsAdapter
-
-        binding.tvPrayerTimes.setOnClickListener {
-            PrayerActivity.startMe(this)
-        }
 
     }
 
@@ -155,9 +150,8 @@ class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompass
                 currentDegree, qiblaDegree.toFloat(),
                 Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f
             )
-            ra.duration = 400
+            ra.duration = 200
             ra.fillAfter = true
-            binding.indicator.startAnimation(ra)
             binding.poinerInner.startAnimation(ra)
         }
 
@@ -196,6 +190,16 @@ class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompass
             val azimuthInRadians: Float = mOrientation.get(0)
             var azimuthInDegress =
                 ((-(Math.toDegrees(azimuthInRadians.toDouble()) + 360)).toFloat() % 360).toDouble()
+
+            val north = RotateAnimation(
+                currentDegree, azimuthInDegress.toFloat(),
+                Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f
+            )
+            north.duration = 200
+            north.fillAfter = true
+            indicator.startAnimation(north)
+
+
             if (Math.abs(azimuthInDegress - previousAzimuthInDegrees) > 300) {
                 previousAzimuthInDegrees = azimuthInDegress
             }
@@ -255,6 +259,7 @@ class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompass
         itemView.setOnClickListener {
             binding.baseimg.setImageResource(Constants.compassFaces[adapterPosition])
             binding.lyDrawerBottom.setBackgroundColor(ContextCompat.getColor(this, Constants.colorsArray[adapterPosition]))
+            binding.ivTranslate.setImageResource(Constants.translateIcon[adapterPosition])
         }
     }
 

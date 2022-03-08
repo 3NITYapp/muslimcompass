@@ -13,8 +13,8 @@ android {
         applicationId "qiblacompass.qibladirection.finddirection"
         minSdk 21
         targetSdk 31
-        versionCode 4
-        versionName "1.3"
+        versionCode 5
+        versionName "1.4"
         def date = new Date()
         def formattedDate = date.format('dd-MMM-yyyy')
         setProperty("archivesBaseName", "qibla_compass_v" + versionName + "_" +formattedDate)
