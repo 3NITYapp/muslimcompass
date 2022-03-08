@@ -13,12 +13,15 @@ android {
         applicationId "qiblacompass.qibladirection.finddirection"
         minSdk 21
         targetSdk 31
-        versionCode 6
-        versionName "1.5"
+        versionCode 7
+        versionName "1.6"
         def date = new Date()
         def formattedDate = date.format('dd-MMM-yyyy')
         setProperty("archivesBaseName", "qibla_compass_v" + versionName + "_" +formattedDate)
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            debugSymbolLevel 'FULL'
+        }
     }
 
     buildTypes {
@@ -72,3 +75,5 @@ dependencies {
     implementation 'com.github.ahmedeltaher:Azan:3.0'
 
 }
+
+android.buildTypes.release.ndk.debugSymbolLevel = 'FULL'
