@@ -4,6 +4,9 @@ plugins {
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.firebase.firebase-perf'
 }
 
 android {
@@ -13,12 +16,13 @@ android {
         applicationId "qiblacompass.qibladirection.finddirection"
         minSdk 21
         targetSdk 31
-        versionCode 7
-        versionName "1.6"
+        versionCode 9
+        versionName "1.8"
         def date = new Date()
         def formattedDate = date.format('dd-MMM-yyyy')
         setProperty("archivesBaseName", "qibla_compass_v" + versionName + "_" +formattedDate)
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndkVersion "21.4.7075529"
         ndk {
             debugSymbolLevel 'FULL'
         }
@@ -26,7 +30,8 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -74,6 +79,15 @@ dependencies {
     //PrayerTimes
     implementation 'com.github.ahmedeltaher:Azan:3.0'
 
-}
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:30.0.2')
 
-android.buildTypes.release.ndk.debugSymbolLevel = 'FULL'
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // Declare the depencency for the performance monitoring
+    implementation 'com.google.firebase:firebase-perf-ktx'
+
+
+}

@@ -284,8 +284,8 @@ class PrayAlarmReceiver : BroadcastReceiver() {
     ): Calendar {
         var strTime = prayerTime
         if (!DateFormat.is24HourFormat(context)) {
-            val display = SimpleDateFormat("HH:mm", Locale.getDefault())
-            val parse = SimpleDateFormat("hh:mm a", Locale.getDefault())
+            val display = SimpleDateFormat("HH:mm", Locale.ENGLISH)
+            val parse = SimpleDateFormat("hh:mm a", Locale.ENGLISH)
             val date = parse.parse(strTime)
             if (date != null) strTime = display.format(date)
         }
@@ -349,7 +349,7 @@ class PrayAlarmReceiver : BroadcastReceiver() {
                 applicationContext.getString(R.string.app_name), importance
             )
             val audioAttributes = AudioAttributes.Builder()
-                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
                 .setUsage(AudioAttributes.USAGE_NOTIFICATION)
                 .build()
             channel.setSound(soundUri, audioAttributes)

@@ -89,16 +89,16 @@ class MainActivity : BaseActivity(), SensorEventListener, ImageAdapter.OnCompass
 
         if (mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD) != null) {
             // Success! There's a magnetometer.
-            binding.ifnosensortxt.setVisibility(View.GONE)
-            binding.indicator.setVisibility(View.VISIBLE)
-            binding.baseimg.setVisibility(View.VISIBLE)
-            binding.notetxt.setVisibility(View.VISIBLE)
+            binding.ifnosensortxt.visibility = View.GONE
+            binding.indicator.visibility = View.VISIBLE
+            binding.baseimg.visibility = View.VISIBLE
+            binding.notetxt.visibility = View.VISIBLE
         } else {
             // Failure! No magnetometer.
-            binding.ifnosensortxt.setVisibility(View.VISIBLE)
-            binding.indicator.setVisibility(View.GONE)
-            binding.baseimg.setVisibility(View.GONE)
-            binding.notetxt.setVisibility(View.GONE)
+            binding.ifnosensortxt.visibility = View.VISIBLE
+            binding.indicator.visibility = View.GONE
+            binding.baseimg.visibility = View.GONE
+            binding.notetxt.visibility = View.GONE
         }
 
         val adapter = ImageAdapter(this, this)
