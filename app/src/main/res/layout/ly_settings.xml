@@ -3,148 +3,218 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/lyDetail"
+        android:id="@+id/lyDetailSet"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/transparent"
         android:gravity="center"
-        android:background="@color/white"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="55dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@drawable/bg_button"
             android:fontFamily="@font/poppins_medium"
             android:gravity="center"
             android:text="@string/settings"
-            android:textColor="@color/dull_black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:visibility="gone"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="@string/time_formats"
-            android:textColor="@color/dull_black"/>
+            android:textColor="@color/text_soft_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:visibility="gone"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:layout_width="320dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            app:cardCornerRadius="25dp">
 
-            <Spinner
-                android:id="@+id/sp_time_formats"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:overlapAnchor="false"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/time_formats"
+                    android:textColor="@color/dull_black"
+                    android:visibility="gone" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp">
+
+                    <Spinner
+                        android:id="@+id/sp_time_formats"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overlapAnchor="false" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:text="@string/calculation_methods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textColor="@color/text_dialogs"
+                    android:textSize="20sp"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="305dp"
+                        android:layout_height="49.5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/bg_card_settings"
+                        app:cardBackgroundColor="@color/text_dialogs"
+                        app:cardCornerRadius="25dp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="12.5dp"
+                        android:layout_marginStart="12.5dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/bg_card_settings"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="25dp">
+
+                        <Spinner
+                            android:id="@+id/sp_calculation_method"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overlapAnchor="false" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+                <TextView
+                    android:text="@string/juristic_methods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textColor="@color/text_dialogs"
+                    android:textSize="20sp"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="305dp"
+                    android:layout_height="49.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_card_settings"
+                    app:cardBackgroundColor="@color/text_dialogs"
+                    app:cardCornerRadius="25dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginStart="12.5dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_card_settings"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <Spinner
+                        android:id="@+id/sp_juristic_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overlapAnchor="false" />
+
+                </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+                <TextView
+                    android:text="@string/adjusting_methods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textColor="@color/text_dialogs"
+                    android:textSize="20sp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="305dp"
+                    android:layout_height="49.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_card_settings"
+                    app:cardBackgroundColor="@color/text_dialogs"
+                    app:cardCornerRadius="25dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginStart="12.5dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_card_settings"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <Spinner
+                        android:id="@+id/sp_adjusting_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overlapAnchor="false" />
+
+                </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/btn_save"
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center|bottom"
+                    android:background="@drawable/bg_button_blue"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="@string/get_started"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="@string/calculation_methods"
-            android:textColor="@color/dull_black"/>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
-
-            <Spinner
-                android:id="@+id/sp_calculation_method"
-                android:layout_width="match_parent"
-                android:overlapAnchor="false"
-                android:layout_height="match_parent" />
-
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="@string/juristic_methods"
-            android:textColor="@color/dull_black"/>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
-
-            <Spinner
-                android:id="@+id/sp_juristic_method"
-                android:layout_width="match_parent"
-                android:overlapAnchor="false"
-                android:layout_height="match_parent" />
-
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="@string/adjusting_methods"
-            android:textColor="@color/dull_black"/>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
-
-            <Spinner
-                android:id="@+id/sp_adjusting_method"
-                android:layout_width="match_parent"
-                android:overlapAnchor="false"
-                android:layout_height="match_parent" />
-
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:gravity="center"
-            android:id="@+id/btn_save"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_rounded"
-            android:backgroundTint="@color/dull_black"
-            android:fontFamily="@font/poppins_regular"
-            android:text="@string/get_started"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
 
     </LinearLayout>
 

@@ -16,10 +16,10 @@
         <entry key="app/src/main/res/drawable/fg_compass.xml" value="0.19375" />
         <entry key="app/src/main/res/drawable/ic_compass_text.xml" value="0.209375" />
         <entry key="app/src/main/res/layout/activity_compass_test.xml" value="0.10778985507246377" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_permissions_detail.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_prayer.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.16" />
         <entry key="app/src/main/res/layout/custom_progress.xml" value="0.17481884057971014" />
         <entry key="app/src/main/res/layout/fragment_compass.xml" value="0.18" />
         <entry key="app/src/main/res/layout/item_row.xml" value="0.17889492753623187" />

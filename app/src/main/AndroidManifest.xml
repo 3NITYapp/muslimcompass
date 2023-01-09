@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="qiblacompass.qibladirection.finddirection">
+    package="muslimcompass.direction.finddirection">
 
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
         android:name="android.permission.ACCESS_FINE_LOCATION"
@@ -20,24 +21,24 @@
         android:required="true" />
 
     <application
-        android:name=".App"
+        android:name="muslimcompass.direction.finddirection.App"
         android:allowBackup="true"
-        android:icon="@drawable/app_icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/app_icon"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QiblaCompass">
         <activity
-            android:name=".prayer.PrayerActivity"
+            android:name="muslimcompass.direction.finddirection.prayer.PrayerActivity"
             android:exported="true" />
         <activity
-            android:name=".permission.PermissionDetailActivity"
+            android:name="muslimcompass.direction.finddirection.permission.PermissionDetailActivity"
             android:exported="true" />
         <activity
-            android:name=".compass.MainActivity"
+            android:name="muslimcompass.direction.finddirection.compass.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".splash.SplashActivity"
+            android:name="muslimcompass.direction.finddirection.settings.splash.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,7 +47,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TestMainActivity"
+            android:name="muslimcompass.direction.finddirection.TestMainActivity"
             android:exported="true">
             <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,12 +56,12 @@
             </intent-filter>-->
         </activity>
 
-        <receiver android:name=".scheduler.LocationChangedReceiver"
+        <receiver android:name="muslimcompass.direction.finddirection.scheduler.LocationChangedReceiver"
             android:exported="true" />
-        <receiver android:name=".scheduler.PrayAlarmReceiver"
+        <receiver android:name="muslimcompass.direction.finddirection.scheduler.PrayAlarmReceiver"
             android:exported="true" />
         <receiver
-            android:name=".scheduler.PrayBootReceiver"
+            android:name="muslimcompass.direction.finddirection.scheduler.PrayBootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -76,10 +77,10 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".scheduler.PraySchedulingService" />
+        <service android:name="muslimcompass.direction.finddirection.scheduler.PraySchedulingService" />
 
         <service
-            android:name=".helper.GpsTracker"
+            android:name="muslimcompass.direction.finddirection.helper.GpsTracker"
             android:exported="false" />
     </application>
 

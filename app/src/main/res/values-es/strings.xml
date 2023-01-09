@@ -46,5 +46,11 @@
     <string name="rate_us">Nos califica</string>
     <string name="about_us">Sobre nosotros</string>
     <string name="more_apps">Más aplicaciones</string>
+    <string name="internet">Internet</string>
+    <string name="this_permission_deals_with_internet_related_tasks">This permission deals with internet related tasks</string>
+    <string name="access_coarse_location">Access coarse location</string>
+    <string name="allows_the_api_to_use_wifi_or_mobile_cell_data_or_both_to_determine_the_device_s_location_the_api_returns_the_location_with_an_accuracy_approximately_equivalent_to_a_city_block">Allows the API to use WiFi or mobile cell data (or both) to determine the device\'s location. The API returns the location with an accuracy approximately equivalent to a city block.</string>
+    <string name="access_fine_location">Access fine location</string>
+    <string name="in_order_to_use_wi_fi_p2p_for_files_sharing_official_android_documentation_suggests_to_add_this_permission_for_connection">In order to use Wi-Fi P2P for files sharing, official android documentation suggests to add this permission for connection.</string>
 
 </resources>

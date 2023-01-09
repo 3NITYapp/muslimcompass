@@ -5,19 +5,17 @@ plugins {
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'com.google.gms.google-services'
-    id 'com.google.firebase.crashlytics'
-    id 'com.google.firebase.firebase-perf'
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
-        applicationId "qiblacompass.qibladirection.finddirection"
+        applicationId "muslimcompass.direction.finddirection"
         minSdk 21
-        targetSdk 31
-        versionCode 9
-        versionName "1.8"
+        targetSdk 33
+        versionCode 11
+        versionName "1.0"
         def date = new Date()
         def formattedDate = date.format('dd-MMM-yyyy')
         setProperty("archivesBaseName", "qibla_compass_v" + versionName + "_" +formattedDate)
@@ -79,15 +77,8 @@ dependencies {
     //PrayerTimes
     implementation 'com.github.ahmedeltaher:Azan:3.0'
 
-    // Import the BoM for the Firebase platform
-    implementation platform('com.google.firebase:firebase-bom:30.0.2')
-
-    // Declare the dependencies for the Crashlytics and Analytics libraries
-    implementation 'com.google.firebase:firebase-crashlytics-ktx'
-    implementation 'com.google.firebase:firebase-analytics-ktx'
-
-    // Declare the depencency for the performance monitoring
-    implementation 'com.google.firebase:firebase-perf-ktx'
-
+    def work_version = "2.7.0"
+    implementation "androidx.work:work-runtime:$work_version"
+    implementation "androidx.work:work-runtime-ktx:$work_version"
 
 }

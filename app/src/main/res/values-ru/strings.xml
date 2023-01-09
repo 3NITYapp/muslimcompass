@@ -24,7 +24,7 @@
     <string name="maghrib"> Магриб </string>
     <string name="isha"> Иша </string>
     <string name="prayer_time"> Время молитв </string>
-    <string name="gregorian_date"> Дата сегодняшнего дня:</string>
+    <string name="gregorian_date"> Дата:</string>
     <string name="islamic_date"> Исламский:</string>
 
     <string name="settings"> Параметры </string>
@@ -40,12 +40,19 @@
     <string name="french">français</string>
     <string name="spanish">Español</string>
     <string name="turkish">Türkçe</string>
-    <string name="russian">РОССИЯ</string>
+    <string name="russian">Русский</string>
 
     <!--Drawer-->
     <string name="share_app"> Поделиться приложением </string>
+    <string name="muslim_compass">Muslim compass</string>
     <string name="rate_us"> Оцените нас </string>
     <string name="about_us"> О нас </string>
     <string name="more_apps"> Другие приложения </string>
+    <string name="internet">Интернет</string>
+    <string name="this_permission_deals_with_internet_related_tasks">Это разрешение касается задач, связанных с Интернетом</string>
+    <string name="access_coarse_location">Доступ к местоположению</string>
+    <string name="allows_the_api_to_use_wifi_or_mobile_cell_data_or_both_to_determine_the_device_s_location_the_api_returns_the_location_with_an_accuracy_approximately_equivalent_to_a_city_block">Позволяет API использовать данные Wi-Fi или мобильной сотовой связи (или и то, и другое) для определения местоположения устройства. API возвращает местоположение с точностью, приблизительно эквивалентной городскому кварталу</string>
+    <string name="access_fine_location">Доступ к файлам</string>
+    <string name="in_order_to_use_wi_fi_p2p_for_files_sharing_official_android_documentation_suggests_to_add_this_permission_for_connection">Чтобы использовать Wi-Fi P2P для обмена файлами, Android предлагает добавить это разрешение для подключения</string>
 
 </resources>

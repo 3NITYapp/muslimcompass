@@ -30,4 +30,10 @@
     <color name="third">#2196F3</color>
     <color name="fourth">#F44336</color>
     <color name="fifth">#FFC107</color>
+    <color name="text_soft_white">#FCFCFC</color>
+    <color name="gradient_start">#FFD268</color>
+    <color name="gradient_end">#D87B00</color>
+    <color name="text_dialogs">#00376D</color>
+
+
 </resources>

@@ -3,7 +3,7 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/lyDetail"
+        android:id="@+id/lyDetailLang"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -16,11 +16,11 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_gravity="center"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/raleway_bold"
             android:gravity="center"
             android:text="@string/select_language"
-            android:textColor="@color/dull_black"
-            android:textSize="18sp" />
+            android:textColor="@color/text_dialogs"
+            android:textSize="20sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_languages"

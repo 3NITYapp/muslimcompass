@@ -3,7 +3,7 @@
     <string name="get_started">Get Started</string>
     <string name="no_location">No location detected</string>
     <string name="qibla_direction">Qibla direction from North:</string>
-    <string name="qibla_notic">Note: you might need to move the device in a circular motion to reset the compass</string>
+    <string name="qibla_notic">You might need to move the device in a circular motion to reset the compass</string>
     <string name="quibla_compass">Qibla Compass</string>
     <string name="gps_alert">Your GPS seems to be disabled, do you want to enable it?</string>
     <string name="internet_alert">Your internet connection seems to be disabled, enable it and try again.</string>
@@ -11,7 +11,7 @@
     <string name="no">No</string>
     <string name="ok">OK</string>
     <string name="fetching">Fetching current location</string>
-    <string name="about_permissions">Required Permissions</string>
+    <string name="about_permissions">Permission required</string>
     <string name="grant_all">Grant All</string>
     <string name="proceed">Proceed Now</string>
 
@@ -23,7 +23,7 @@
     <string name="maghrib">Maghrib</string>
     <string name="isha">Isha</string>
     <string name="prayer_time">Prayers Time</string>
-    <string name="gregorian_date">Today\'s Date:</string>
+    <string name="gregorian_date">Date:</string>
     <string name="islamic_date">Islamic:</string>
 
     <string name="settings">Settings</string>
@@ -39,12 +39,19 @@
     <string name="french">français</string>
     <string name="spanish">Español</string>
     <string name="turkish">Türkçe</string>
-    <string name="russian">РОССИЯ</string>
+    <string name="russian">Russian</string>
 
     <!--Drawer-->
     <string name="share_app">Share App</string>
     <string name="rate_us">Rate Us</string>
     <string name="about_us">About Us</string>
     <string name="more_apps">More Apps</string>
+    <string name="muslim_compass">Muslim Compass</string>
+    <string name="internet">Internet</string>
+    <string name="this_permission_deals_with_internet_related_tasks">This permission deals with internet related tasks</string>
+    <string name="access_coarse_location">Access coarse location</string>
+    <string name="allows_the_api_to_use_wifi_or_mobile_cell_data_or_both_to_determine_the_device_s_location_the_api_returns_the_location_with_an_accuracy_approximately_equivalent_to_a_city_block">Allows the API to use WiFi or mobile cell data (or both) to determine the device\'s location. The API returns the location with an accuracy approximately equivalent to a city block.</string>
+    <string name="access_fine_location">Access fine location</string>
+    <string name="in_order_to_use_wi_fi_p2p_for_files_sharing_official_android_documentation_suggests_to_add_this_permission_for_connection">In order to use Wi-Fi P2P for files sharing, official android documentation suggests to add this permission for connection.</string>
 
 </resources>
